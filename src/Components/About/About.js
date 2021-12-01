@@ -2,11 +2,11 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 
 export default function About(props) {
-  //   const history = useHistory();
+ const history = useHistory();
   return (
     <div>
-      {/* <button onClick={() => history.push("/main")}>Go back</button> */}
-        <button onClick={()=>props.context.history.goBack()}>go Back</button>
+      <button onClick={() => history.push("/main")}>Go back</button>
+        {/* <button onClick={()=>props.context.history.goBack()}>go Back</button> */}
       <h1> Why do we use it? </h1>
       <p>
         It is a long established fact that a reader will be distracted by the
